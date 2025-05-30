@@ -19,7 +19,7 @@ app.use(cookieParser());
 
 app.use("/api/auth", authRoutes);
 app.use("/api/user", userRoutes);
-app.use("/api/user", (req,res)=>{
+app.use("/", (req,res)=>{
     res.send({
         activeStatus: true,
         error: false,
